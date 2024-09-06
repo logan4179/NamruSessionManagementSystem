@@ -14,15 +14,15 @@ namespace NamruSessionManagementSystem
 
 			if (format == NAMRU_LogType.None)
 			{
-				formattedMessage = $"[{gameObject.name}.{name}] >> {message}";
+				formattedMessage = $"[{gameObject.name}] >> {message}";
 			}
 			else if (format == NAMRU_LogType.UserMethod)
 			{
-				formattedMessage = $"[{gameObject.name}.{name}] >> {message}";
+				formattedMessage = $"[{gameObject.name}}] >> {message}";
 			}
 			else if (format == NAMRU_LogType.UnityAPI)
 			{
-				formattedMessage = $"[{gameObject.name}.{name}] >> {message}";
+				formattedMessage = $"[{gameObject.name}] >> {message}";
 			}
 
 			NamruLogManager.Log(formattedMessage, destination);
@@ -37,12 +37,12 @@ namespace NamruSessionManagementSystem
 
 		protected void LogWarning(string message)
 		{
-			NamruLogManager.LogWarning($"[{gameObject.name}.{name}] >> {message}");
+			NamruLogManager.LogWarning($"[{gameObject.name}] >> {message}");
 		}
 
 		protected void LogError(string message)
 		{
-			NamruLogManager.LogError($"[{gameObject.name}.{name}] >> {message}");
+			NamruLogManager.LogError($"[{gameObject.name}] >> {message}");
 		}
 	}
 }
