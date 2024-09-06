@@ -18,7 +18,7 @@ namespace NamruSessionManagementSystem
 			}
 			else if (format == NAMRU_LogType.UserMethod)
 			{
-				formattedMessage = $"[{gameObject.name}}] >> {message}";
+				formattedMessage = $"[{gameObject.name}] >> {message}";
 			}
 			else if (format == NAMRU_LogType.UnityAPI)
 			{
